@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Default style reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Habibi', Arial, Helvetica, sans-serif;
+    user-select: none;
+    color: #FF356C;
+}
+
+p, a, span, li {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    user-select: none;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/main_background.png') no-repeat;
+    background-size: 100%;
+}
+
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+    height: 8vh;
+    padding-top: 2em;
+}
+
+nav a:nth-child(2) {
+    color: #FF356C;
+    border-bottom: 1px solid #FF356C;
+}
+
+nav a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FF356C;
+    transition: ease-in-out 100ms;
+}
+
+nav img {
+    width: 5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 4em 0 2em 0;
+}
+
+main h1 {
+    margin: 0 0 2em 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    width: 90vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0.7em 0.5em;
+    border: 5px solid #FF356C;
+    padding: 1em;
+    cursor: pointer;
+}
+
+section:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 50ms;
+}
+
+section img {
+    overflow: hidden;
+    margin: 1em;
+}
+
+section p {
+    text-align: center;
+}
